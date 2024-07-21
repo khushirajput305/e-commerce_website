@@ -1,5 +1,5 @@
 const Products2= require("./models/productsSchema2");
-const Second_slide_Data=require("./constant/productdata2");
+const Second_slide_Data=require("./constant/productdata2.js");
 
 const SecondSlide=async()=>{
     try {
