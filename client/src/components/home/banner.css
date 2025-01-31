@@ -1,16 +1,12 @@
 .banner_img{
     width: 100vw;
-    height: 280px;
-}
-
-.carousel{
-    margin-top: 10;
-}
-
-
-@media (max-width:768px){
-    .banner_img{
-        object-fit: cover;
-        height: 180px;
+    height: 300px;
     }
-}
+    .carousel{
+      margin-top: 10px;
+    }
+    
+    img {
+      overflow-clip-margin: content-box;
+      overflow: clip;
+    }

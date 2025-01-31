@@ -1,26 +1,22 @@
-const products = [];
-const secondData = [];
+const products=[]
+const second_data = []
 
-export const getProductsreducer = (state = { products }, action) => {
-  switch (action.type) {
+export const getProductsreducer=(state={products},action)=>{
+  switch(action.type){
     case "SUCCESS_GET_PRODUCTS":
-      return { products: action.payload };
+      return {products:action.payload}
     case "FAIL_GET_PRODUCTS":
-      return { products: action.payload };
-    default:
-      return state;
+      return {products:action.payload}
+    default : return state
   }
-};
+}
 
-
-
-export const getSecondProductsreducer = (state = { secondData }, action) => {
-  switch (action.type) {
-    case "SUCCESS_GET_PRODUCTS":
-      return { secondData: action.payload };
+export const getSecondSlideProductsreducer=(state={second_data},action)=>{
+  switch(action.type){
+    case "SUCCES_GET_PRODUCTS":
+      return {second_data : action.payload}
     case "FAIL_GET_PRODUCTS":
-      return { secondData: action.payload };
-    default:
-      return state;
+      return {second_data : action.payload}
+    default : return state
   }
-};
+}

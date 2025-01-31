@@ -1,15 +1,16 @@
-const mongoose = require("mongoose");
+const mongoose=require("mongoose");
 
-const productsSchema2= new mongoose.Schema({
-    id:String,
-    url:String,
-    detailsUrl:String,
-    title:Object,
-    price:Object,
-    description:String,
-    discount:String,
-    tagline:String
-})
+const productsSchema2=new mongoose.Schema({
+  id:String,
+  url:String,
+  detailsurl:String,
+  title:Object,
+  price:Object,
+  description:String,
+  discount:String,
+  tagline:String
+});
 
-const Products2=new mongoose.model("secondslide",productsSchema2);
-module.exports=Products2;
+const SecondSlide= new mongoose.model("secondslides",productsSchema2);
+
+module.exports=SecondSlide;

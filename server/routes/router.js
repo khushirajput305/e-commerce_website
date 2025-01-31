@@ -17,16 +17,7 @@ router.get("/getproducts", async (req, res) => {
   }
 });
 
-// Get Second slide product data api
-router.get("/secondSlideProduct", async (req, res) => {
-  try {
-    const Second_slide_data = await Products2.find();
-    // console.log("console the data" + Second_slide_data);
-    res.status(201).json(Second_slide_data);
-  } catch (error) {
-    console.log("Error " + error.message);
-  }
-});
+
 
 //get individual data
 router.get("/getproductsone/:id", async (req, res) => {
@@ -43,6 +34,21 @@ router.get("/getproductsone/:id", async (req, res) => {
     console.log("Error " + error.message);
   }
 });
+
+// get indivaidual data of second slide
+router.get("/getproductstwo/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    // console.log(id);
+    const individualData = await SecondSlide.findOne({ id: id })
+    // console.log(individualData + "individual data");
+
+    res.status(201).json(individualData)
+  } catch (error) {
+    res.status(400).json(individualData)
+    console.log("Error " + error.messge);
+  }
+})
 
 //register data
 
