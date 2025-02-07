@@ -23,7 +23,7 @@ export const secondSlideData=()=>async(dispatch)=>{
     }
     });
     const res= await second_data.json();
-    console.log(res);
+    console.log("Second Slide Data:", res);
     dispatch({type:"SUCCES_GET_PRODUCTS",payload:res})
   } catch (error) {
     dispatch({type:"FAIL_GET_PRODUCTS",payload:error.responce})

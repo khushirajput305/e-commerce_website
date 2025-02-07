@@ -19,8 +19,9 @@ const Maincomp = () => {
   }, [dispatch])
 
   
-  const {second_data}= useSelector((state)=>state.getSecondSlidedata);
+const second_data = useSelector((state) => state.getSecondSlidedata?.second_data || []);
   console.log(second_data);
+
 
   useEffect(()=>{
     dispatch(secondSlideData());
