@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './signup.css';
 import { Divider } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,6 +15,8 @@ const SignUp = () => {
         password:"",
         cpassword:""
     });
+        const navigate = useNavigate(); // Initialize navigate
+    
 
     const adddata = (e)=>{
         const {name,value} = e.target;
@@ -53,6 +56,9 @@ const SignUp = () => {
             position:"top-center",
         })
         setUdata({...udata,fname:"",email:"",mobile:"",password:"",cpassword:""});
+        setTimeout(() => {
+            navigate("/");
+        }, 1500);
        }
     }
     return (

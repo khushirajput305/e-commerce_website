@@ -51,7 +51,7 @@ header{
   
   select{
     background-color:#ccc;
-    height: 40px;
+    height: 38px;
     border: none;
     outline: none;
     margin-left: 0;
@@ -72,7 +72,7 @@ header{
   
    header nav .left .search_icon{
     background-color: #febd69;
-    height: 40px;
+    height: 38px;
     width: 45px;
     display: flex;
     justify-content: center;
@@ -105,8 +105,8 @@ header{
     font-weight: bold;
   }
   .language img{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
   .language img:hover{
     border: none;

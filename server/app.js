@@ -7,8 +7,6 @@ const cookieParser = require("cookie-parser")
 
 const Products=require("./models/productsSchema");
 const DefaultData= require("./defaultdata");
-const SecondSlide= require("./models/productsSchema2")
-const SecondSlideData=require("./SecondSlideData")
 const cors= require("cors")
 const router=require("./routes/router")
 
@@ -27,4 +25,3 @@ app.listen(port , ()=>{
 })
 
 DefaultData();
-SecondSlideData();

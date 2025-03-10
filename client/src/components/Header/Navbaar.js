@@ -24,7 +24,6 @@ const Navbaar = () => {
   const [liOpen, setLiOpen] = useState(true);
 
   const { products } = useSelector((state) => state.getproductdata);
-  const { second_data } = useSelector((state) => state.getSecondSlidedata);
 
   const getdetailValidUSer = async () => {
     const res = await fetch("/validUser", {
@@ -87,15 +86,7 @@ const Navbaar = () => {
                         </NavLink>
                       </ListItem>
                     ))
-                  }  {
-                    second_data.filter(product => product.title.shortTitle.toLowerCase().includes(text.toLowerCase())).map(product => (
-                      <ListItem>
-                        <NavLink to={`/getproductstwo/${product.id}`}  onClick={()=>setLiOpen(true)}>
-                          {product.title.shortTitle}
-                        </NavLink>
-                      </ListItem>
-                    ))
-                  }
+                  }  
 
                 </List>
               }

@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
-import {Avatar, Divider} from '@mui/material'
+import Avatar from '@mui/material/Avatar';
 import { LoginContext } from '../context/ContextProvider';
 import { NavLink, useNavigate } from 'react-router-dom';
 import LogoutIcon from '@mui/icons-material/Logout';
 import {ToastContainer, toast} from "react-toastify";
+import { Divider } from '@mui/material';
 import 'react-toastify/dist/ReactToastify.css';
 import "./leftheader.css";
 
@@ -77,4 +78,4 @@ const Leftheader = ({LogClose}) => {
   )
 }
 
-export default Leftheader
+export default Leftheader;

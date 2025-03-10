@@ -6,7 +6,6 @@ import Sign_in from "./components/signup_sign/Sign_in";
 import SignUp from "./components/signup_sign/SignUp";
 import Cart from "./components/cart/Cart";
 import Buynow from "./components/buynow/Buynow";
-import SecondslideCart from "./components/cart/SecondslideCart";
 import "./App.css";
 import { Routes , Route } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -34,7 +33,6 @@ function App() {
               <Route path="/login" element={<Sign_in/>}/>
               <Route path="/register" element={<SignUp/>}/>
               <Route path="/getproductsone/:id" element={<Cart/>}/>
-              <Route path='/getproductstwo/:id' element={<SecondslideCart/>}/>
               <Route path="/buynow" element={<Buynow/>}/>
 
             </Routes>
